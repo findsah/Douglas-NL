@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:14-alpine
 
 ENV PORT 1337
 ENV HOST 0.0.0.0
@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package*.json /usr/src/app/
 COPY yarn.lock /usr/src/app/
-RUN yarn install --ignore-engines
+RUN yarn install
 
 # Bundle app source
 COPY . /usr/src/app
