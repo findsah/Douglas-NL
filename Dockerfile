@@ -1,5 +1,6 @@
 FROM strapi/base
 
+ENV PORT 8080
 ENV DATABASE_CLIENT mysql
 ENV DATABASE_HOST strapi-emperia-demo-db.mysql.database.azure.com
 ENV DATABASE_PORT 3306
@@ -19,6 +20,6 @@ COPY ./app .
 
 RUN yarn build
 
-EXPOSE 1337
+EXPOSE 8080
 
 CMD ["yarn", "start"]
