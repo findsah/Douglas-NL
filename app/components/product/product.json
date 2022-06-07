@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_product_products",
+  "info": {
+    "name": "Product",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

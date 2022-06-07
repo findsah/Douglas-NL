@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gift-finder",
+      "handler": "gift-finder.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gift-finder",
+      "handler": "gift-finder.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gift-finder",
+      "handler": "gift-finder.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

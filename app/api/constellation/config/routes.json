@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/constellations",
+      "handler": "constellation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/constellations/count",
+      "handler": "constellation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/constellations/:id",
+      "handler": "constellation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/constellations",
+      "handler": "constellation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/constellations/:id",
+      "handler": "constellation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/constellations/:id",
+      "handler": "constellation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

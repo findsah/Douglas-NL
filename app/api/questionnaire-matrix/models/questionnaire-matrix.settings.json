@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questionnaire_matrices",
+  "info": {
+    "name": "Questionnaire matrix",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "constellation": {
+      "model": "constellation"
+    },
+    "answers": {
+      "collection": "answer"
+    }
+  }
+}

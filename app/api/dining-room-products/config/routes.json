@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dining-room-products",
+      "handler": "dining-room-products.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dining-room-products/count",
+      "handler": "dining-room-products.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dining-room-products/:id",
+      "handler": "dining-room-products.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dining-room-products",
+      "handler": "dining-room-products.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dining-room-products/:id",
+      "handler": "dining-room-products.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dining-room-products/:id",
+      "handler": "dining-room-products.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
