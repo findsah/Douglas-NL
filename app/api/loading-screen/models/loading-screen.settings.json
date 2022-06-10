@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "loading_screens",
+  "info": {
+    "name": "Loading Screen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "LoadingScreen": {
+      "type": "string",
+      "default": "CLICK TO ENTER THE EXPERIENCE",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
