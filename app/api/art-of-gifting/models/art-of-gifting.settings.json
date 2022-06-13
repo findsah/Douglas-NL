@@ -25,7 +25,7 @@
         }
       }
     },
-    "sayItWithDior": {
+    "SayItWithDior": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -78,6 +78,30 @@
       },
       "type": "string",
       "default": "www.dior.com"
+    },
+    "SayItWithDiorHover": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "TheArtOfGiftingHover": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "ExclusiveAttentionFromDiorHover": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

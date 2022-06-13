@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/10/2022 5:07:57 PM"
+    "x-generation-date": "06/13/2022 11:27:17 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7327,7 +7327,7 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "sayItWithDior": {
+          "SayItWithDior": {
             "type": "string",
             "default": "SAY IT WITH DIOR"
           },
@@ -7351,6 +7351,15 @@
             "type": "string",
             "default": "www.dior.com"
           },
+          "SayItWithDiorHover": {
+            "type": "string"
+          },
+          "TheArtOfGiftingHover": {
+            "type": "string"
+          },
+          "ExclusiveAttentionFromDiorHover": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -7364,7 +7373,7 @@
                 "title": {
                   "type": "string"
                 },
-                "sayItWithDior": {
+                "SayItWithDior": {
                   "type": "string"
                 },
                 "SayItWithDiorLink": {
@@ -7380,6 +7389,15 @@
                   "type": "string"
                 },
                 "ExclusiveAttentionFromDiorLink": {
+                  "type": "string"
+                },
+                "SayItWithDiorHover": {
+                  "type": "string"
+                },
+                "TheArtOfGiftingHover": {
+                  "type": "string"
+                },
+                "ExclusiveAttentionFromDiorHover": {
                   "type": "string"
                 },
                 "localizations": {
@@ -7418,7 +7436,7 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "sayItWithDior": {
+          "SayItWithDior": {
             "type": "string",
             "default": "SAY IT WITH DIOR"
           },
@@ -7441,6 +7459,15 @@
           "ExclusiveAttentionFromDiorLink": {
             "type": "string",
             "default": "www.dior.com"
+          },
+          "SayItWithDiorHover": {
+            "type": "string"
+          },
+          "TheArtOfGiftingHover": {
+            "type": "string"
+          },
+          "ExclusiveAttentionFromDiorHover": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

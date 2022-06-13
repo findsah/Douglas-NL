@@ -327,7 +327,7 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "sayItWithDior": {
+          "SayItWithDior": {
             "type": "string",
             "default": "SAY IT WITH DIOR"
           },
@@ -351,6 +351,15 @@
             "type": "string",
             "default": "www.dior.com"
           },
+          "SayItWithDiorHover": {
+            "type": "string"
+          },
+          "TheArtOfGiftingHover": {
+            "type": "string"
+          },
+          "ExclusiveAttentionFromDiorHover": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -364,7 +373,7 @@
                 "title": {
                   "type": "string"
                 },
-                "sayItWithDior": {
+                "SayItWithDior": {
                   "type": "string"
                 },
                 "SayItWithDiorLink": {
@@ -380,6 +389,15 @@
                   "type": "string"
                 },
                 "ExclusiveAttentionFromDiorLink": {
+                  "type": "string"
+                },
+                "SayItWithDiorHover": {
+                  "type": "string"
+                },
+                "TheArtOfGiftingHover": {
+                  "type": "string"
+                },
+                "ExclusiveAttentionFromDiorHover": {
                   "type": "string"
                 },
                 "localizations": {
@@ -418,7 +436,7 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "sayItWithDior": {
+          "SayItWithDior": {
             "type": "string",
             "default": "SAY IT WITH DIOR"
           },
@@ -441,6 +459,15 @@
           "ExclusiveAttentionFromDiorLink": {
             "type": "string",
             "default": "www.dior.com"
+          },
+          "SayItWithDiorHover": {
+            "type": "string"
+          },
+          "TheArtOfGiftingHover": {
+            "type": "string"
+          },
+          "ExclusiveAttentionFromDiorHover": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
