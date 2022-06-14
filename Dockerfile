@@ -7,13 +7,8 @@ ENV DATABASE_SSL false
 
 WORKDIR /my-path
 
-COPY ./app/package.json ./
-COPY ./app/yarn.lock ./
-
-RUN yarn install
-
 COPY ./app .
-
+RUN yarn install
 RUN yarn build
 
 EXPOSE 8080
