@@ -79,6 +79,10 @@
       },
       "type": "string",
       "default": "PRESTIGE RITUAL"
+    },
+    "answer": {
+      "model": "answer",
+      "via": "constellations"
     }
   }
 }

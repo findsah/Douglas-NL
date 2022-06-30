@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/loading-screen": {
+    "/menu-options": {
       "get": {
         "deprecated": false,
-        "description": "Find all the loading-screen's records",
+        "description": "Find all the menu-options's records",
         "responses": {
           "200": {
-            "description": "Retrieve loading-screen document(s)",
+            "description": "Retrieve menu-options document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Loading-screen"
+          "Menu-options"
         ],
         "parameters": [
           {
@@ -192,13 +192,15 @@
             "deprecated": false
           }
         ]
-      },
+      }
+    },
+    "/menu-options/{id}": {
       "put": {
         "deprecated": false,
-        "description": "Update a single loading-screen record",
+        "description": "Update a single menu-options record",
         "responses": {
           "200": {
-            "description": "Retrieve loading-screen document(s)",
+            "description": "Retrieve menu-options document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +246,7 @@
         },
         "summary": "",
         "tags": [
-          "Loading-screen"
+          "Menu-options"
         ],
         "requestBody": {
           "description": "",
@@ -252,19 +254,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLoading-screen"
+                "$ref": "#/components/schemas/NewMenu-options"
               }
             }
           }
         },
-        "parameters": []
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single loading-screen record",
+        "description": "Delete a single menu-options record",
         "responses": {
           "200": {
-            "description": "deletes a single loading-screen based on the ID supplied",
+            "description": "deletes a single menu-options based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,15 +320,26 @@
         },
         "summary": "",
         "tags": [
-          "Loading-screen"
+          "Menu-options"
         ],
-        "parameters": []
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     }
   },
   "components": {
     "schemas": {
-      "Loading-screen": {
+      "Menu-options": {
         "required": [
           "id"
         ],
@@ -323,13 +347,9 @@
           "id": {
             "type": "string"
           },
-          "LoadingScreen": {
+          "Option": {
             "type": "string",
-            "default": "CLICK TO ENTER THE EXPERIENCE"
-          },
-          "SkipVideo": {
-            "type": "string",
-            "default": "Skip Video"
+            "default": "option1"
           },
           "localizations": {
             "type": "array",
@@ -341,10 +361,7 @@
                 "id": {
                   "type": "string"
                 },
-                "LoadingScreen": {
-                  "type": "string"
-                },
-                "SkipVideo": {
+                "Option": {
                   "type": "string"
                 },
                 "localizations": {
@@ -377,15 +394,11 @@
           }
         }
       },
-      "NewLoading-screen": {
+      "NewMenu-options": {
         "properties": {
-          "LoadingScreen": {
+          "Option": {
             "type": "string",
-            "default": "CLICK TO ENTER THE EXPERIENCE"
-          },
-          "SkipVideo": {
-            "type": "string",
-            "default": "Skip Video"
+            "default": "option1"
           },
           "localizations": {
             "type": "array",

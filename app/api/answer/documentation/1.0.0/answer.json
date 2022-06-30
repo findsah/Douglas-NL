@@ -526,6 +526,64 @@
             "type": "string",
             "default": "MASCULINE"
           },
+          "constellations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Image": {
+                  "type": "string"
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "perfectGift": {
+                  "type": "string"
+                },
+                "YourConstellation": {
+                  "type": "string"
+                },
+                "YourConstellationDescription": {
+                  "type": "string"
+                },
+                "answer": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -538,6 +596,12 @@
                 },
                 "Answer": {
                   "type": "string"
+                },
+                "constellations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "localizations": {
                   "type": "array",
@@ -574,6 +638,12 @@
           "Answer": {
             "type": "string",
             "default": "MASCULINE"
+          },
+          "constellations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "localizations": {
             "type": "array",

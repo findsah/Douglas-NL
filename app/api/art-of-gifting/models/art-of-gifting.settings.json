@@ -102,6 +102,15 @@
         }
       },
       "type": "string"
+    },
+    "extraField": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "extra Field"
     }
   }
 }

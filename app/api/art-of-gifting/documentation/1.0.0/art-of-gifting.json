@@ -360,6 +360,10 @@
           "ExclusiveAttentionFromDiorHover": {
             "type": "string"
           },
+          "extraField": {
+            "type": "string",
+            "default": "extra Field"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -398,6 +402,9 @@
                   "type": "string"
                 },
                 "ExclusiveAttentionFromDiorHover": {
+                  "type": "string"
+                },
+                "extraField": {
                   "type": "string"
                 },
                 "localizations": {
@@ -468,6 +475,10 @@
           },
           "ExclusiveAttentionFromDiorHover": {
             "type": "string"
+          },
+          "extraField": {
+            "type": "string",
+            "default": "extra Field"
           },
           "localizations": {
             "type": "array",

@@ -24,6 +24,15 @@
           "localized": true
         }
       }
+    },
+    "SkipVideo": {
+      "type": "string",
+      "default": "Skip Video",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

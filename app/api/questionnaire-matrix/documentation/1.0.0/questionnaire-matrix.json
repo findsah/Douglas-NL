@@ -567,6 +567,9 @@
               "YourConstellationDescription": {
                 "type": "string"
               },
+              "answer": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
@@ -599,6 +602,12 @@
                 },
                 "Answer": {
                   "type": "string"
+                },
+                "constellations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "localizations": {
                   "type": "array",

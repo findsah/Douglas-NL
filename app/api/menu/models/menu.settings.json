@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "gift_finders",
+  "kind": "collectionType",
+  "collectionName": "menu",
   "info": {
-    "name": "Gift Finder",
+    "name": "menu",
     "description": ""
   },
   "options": {
@@ -16,27 +16,26 @@
     }
   },
   "attributes": {
-    "GiftFinderTitle": {
+    "MenuOpen": {
       "type": "string",
+      "default": "Menu Open",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "StartButtonText": {
-      "type": "string",
+    "MenuClose": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string",
+      "default": "Menu Close"
     },
-    "questions": {
-      "collection": "question"
-    },
-    "answers": {
-      "collection": "answer"
+    "options": {
+      "collection": "menu-options"
     }
   }
 }
