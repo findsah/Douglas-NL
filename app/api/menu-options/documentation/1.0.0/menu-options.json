@@ -347,9 +347,12 @@
           "id": {
             "type": "string"
           },
-          "Option": {
+          "title": {
             "type": "string",
             "default": "option1"
+          },
+          "sub_title": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -361,7 +364,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Option": {
+                "title": {
+                  "type": "string"
+                },
+                "sub_title": {
                   "type": "string"
                 },
                 "localizations": {
@@ -396,9 +402,12 @@
       },
       "NewMenu-options": {
         "properties": {
-          "Option": {
+          "title": {
             "type": "string",
             "default": "option1"
+          },
+          "sub_title": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

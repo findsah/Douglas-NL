@@ -540,7 +540,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Option": {
+                "title": {
+                  "type": "string"
+                },
+                "sub_title": {
                   "type": "string"
                 },
                 "localizations": {
