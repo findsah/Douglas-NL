@@ -564,10 +564,13 @@
               "YourConstellation": {
                 "type": "string"
               },
-              "YourConstellationDescription": {
+              "YourConstellationshortDescription": {
                 "type": "string"
               },
               "answer": {
+                "type": "string"
+              },
+              "maindescription": {
                 "type": "string"
               },
               "localizations": {

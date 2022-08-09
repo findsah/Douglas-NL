@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "first_screens",
+  "info": {
+    "name": "First screen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClickToEnter": {
+      "type": "string"
+    }
+  }
+}

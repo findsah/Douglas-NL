@@ -71,7 +71,7 @@
       "type": "string",
       "default": "YOUR CONSTELLATION"
     },
-    "YourConstellationDescription": {
+    "YourConstellationshortDescription": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -83,6 +83,14 @@
     "answer": {
       "model": "answer",
       "via": "constellations"
+    },
+    "maindescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }

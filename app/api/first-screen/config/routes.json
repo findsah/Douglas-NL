@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/first-screen",
+      "handler": "first-screen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/first-screen",
+      "handler": "first-screen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/first-screen",
+      "handler": "first-screen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

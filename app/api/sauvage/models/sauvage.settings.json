@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "sauvages",
+  "info": {
+    "name": "Sauvage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

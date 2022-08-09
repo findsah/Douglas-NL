@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/beauty-room",
+      "handler": "beauty-room.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/beauty-room",
+      "handler": "beauty-room.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/beauty-room",
+      "handler": "beauty-room.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sauvage",
+      "handler": "sauvage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sauvage",
+      "handler": "sauvage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sauvage",
+      "handler": "sauvage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

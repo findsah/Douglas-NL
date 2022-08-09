@@ -572,6 +572,12 @@
                 "URL": {
                   "type": "string"
                 },
+                "intensity": {
+                  "type": "integer"
+                },
+                "ishidden": {
+                  "type": "boolean"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

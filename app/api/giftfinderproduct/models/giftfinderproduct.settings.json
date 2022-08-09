@@ -1,0 +1,76 @@
+{
+  "kind": "singleType",
+  "collectionName": "giftfinderproducts",
+  "info": {
+    "name": "Giftfinderproduct",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "secondtitle": {
+      "type": "string"
+    },
+    "perfectgift": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "products"
+    },
+    "lastmedia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Shareurwishlist": {
+      "type": "string"
+    },
+    "Tryagain": {
+      "type": "string"
+    },
+    "DidintFindurperfectgift": {
+      "type": "string"
+    },
+    "shareinkfacebook": {
+      "type": "string"
+    },
+    "sharelinktwitter": {
+      "type": "string"
+    },
+    "sharelinktiktok": {
+      "type": "string"
+    },
+    "sharelinksnapchat": {
+      "type": "string"
+    },
+    "sharelinkwhatsapp": {
+      "type": "string"
+    },
+    "sahrelinktextmessage": {
+      "type": "string"
+    },
+    "sharelinkmessenger": {
+      "type": "string"
+    },
+    "sharelinkinstagram": {
+      "type": "string"
+    },
+    "sharelinkline": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/miss-dior",
+      "handler": "miss-dior.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/miss-dior",
+      "handler": "miss-dior.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/miss-dior",
+      "handler": "miss-dior.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

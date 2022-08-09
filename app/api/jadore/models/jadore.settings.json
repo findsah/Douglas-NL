@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "jadores",
+  "info": {
+    "name": "Jadore",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ttile": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

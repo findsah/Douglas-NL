@@ -628,6 +628,12 @@
                 "URL": {
                   "type": "string"
                 },
+                "intensity": {
+                  "type": "integer"
+                },
+                "ishidden": {
+                  "type": "boolean"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -657,7 +663,7 @@
             "type": "string",
             "default": "YOUR CONSTELLATION"
           },
-          "YourConstellationDescription": {
+          "YourConstellationshortDescription": {
             "type": "string",
             "default": "PRESTIGE RITUAL"
           },
@@ -698,6 +704,9 @@
               }
             }
           },
+          "maindescription": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -729,10 +738,13 @@
                 "YourConstellation": {
                   "type": "string"
                 },
-                "YourConstellationDescription": {
+                "YourConstellationshortDescription": {
                   "type": "string"
                 },
                 "answer": {
+                  "type": "string"
+                },
+                "maindescription": {
                   "type": "string"
                 },
                 "localizations": {
@@ -789,11 +801,14 @@
             "type": "string",
             "default": "YOUR CONSTELLATION"
           },
-          "YourConstellationDescription": {
+          "YourConstellationshortDescription": {
             "type": "string",
             "default": "PRESTIGE RITUAL"
           },
           "answer": {
+            "type": "string"
+          },
+          "maindescription": {
             "type": "string"
           },
           "localizations": {

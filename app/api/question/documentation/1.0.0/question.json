@@ -566,6 +566,9 @@
             "type": "string",
             "default": "In which universe would you like your present to be?"
           },
+          "ButtonSizes": {
+            "type": "object"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -584,6 +587,9 @@
                 },
                 "Question": {
                   "type": "string"
+                },
+                "ButtonSizes": {
+                  "type": "object"
                 },
                 "localizations": {
                   "type": "array",
@@ -626,6 +632,9 @@
           "Question": {
             "type": "string",
             "default": "In which universe would you like your present to be?"
+          },
+          "ButtonSizes": {
+            "type": "object"
           },
           "localizations": {
             "type": "array",

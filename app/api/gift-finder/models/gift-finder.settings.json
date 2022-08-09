@@ -37,6 +37,14 @@
     },
     "answers": {
       "collection": "answer"
+    },
+    "ButtonSizes": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
     }
   }
 }
