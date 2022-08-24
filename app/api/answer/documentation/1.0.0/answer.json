@@ -557,13 +557,10 @@
                 "YourConstellation": {
                   "type": "string"
                 },
-                "YourConstellationshortDescription": {
+                "YourConstellationDescription": {
                   "type": "string"
                 },
                 "answer": {
-                  "type": "string"
-                },
-                "maindescription": {
                   "type": "string"
                 },
                 "localizations": {

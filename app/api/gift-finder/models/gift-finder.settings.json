@@ -38,13 +38,14 @@
     "answers": {
       "collection": "answer"
     },
-    "ButtonSizes": {
+    "YOURPERFECTGIFTAWAITS": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "json"
+      "type": "string",
+      "default": "YOUR PERFECT GIFT AWAITS :"
     }
   }
 }

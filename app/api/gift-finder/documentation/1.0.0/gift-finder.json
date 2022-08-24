@@ -348,9 +348,6 @@
                 "Question": {
                   "type": "string"
                 },
-                "ButtonSizes": {
-                  "type": "object"
-                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -412,8 +409,9 @@
               }
             }
           },
-          "ButtonSizes": {
-            "type": "object"
+          "YOURPERFECTGIFTAWAITS": {
+            "type": "string",
+            "default": "YOUR PERFECT GIFT AWAITS :"
           },
           "localizations": {
             "type": "array",
@@ -443,8 +441,8 @@
                     "type": "string"
                   }
                 },
-                "ButtonSizes": {
-                  "type": "object"
+                "YOURPERFECTGIFTAWAITS": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -496,8 +494,9 @@
               "type": "string"
             }
           },
-          "ButtonSizes": {
-            "type": "object"
+          "YOURPERFECTGIFTAWAITS": {
+            "type": "string",
+            "default": "YOUR PERFECT GIFT AWAITS :"
           },
           "localizations": {
             "type": "array",

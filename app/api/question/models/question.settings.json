@@ -27,14 +27,6 @@
       },
       "type": "string",
       "default": "In which universe would you like your present to be?"
-    },
-    "ButtonSizes": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "json"
     }
   }
 }

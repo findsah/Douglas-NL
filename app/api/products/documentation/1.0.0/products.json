@@ -607,12 +607,6 @@
           "URL": {
             "type": "string"
           },
-          "intensity": {
-            "type": "integer"
-          },
-          "ishidden": {
-            "type": "boolean"
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -643,12 +637,6 @@
                 },
                 "URL": {
                   "type": "string"
-                },
-                "intensity": {
-                  "type": "integer"
-                },
-                "ishidden": {
-                  "type": "boolean"
                 },
                 "localizations": {
                   "type": "array",
@@ -699,12 +687,6 @@
           },
           "URL": {
             "type": "string"
-          },
-          "intensity": {
-            "type": "integer"
-          },
-          "ishidden": {
-            "type": "boolean"
           },
           "localizations": {
             "type": "array",

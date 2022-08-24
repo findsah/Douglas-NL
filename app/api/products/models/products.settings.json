@@ -79,22 +79,6 @@
           "localized": true
         }
       }
-    },
-    "intensity": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer"
-    },
-    "ishidden": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean"
     }
   }
 }
