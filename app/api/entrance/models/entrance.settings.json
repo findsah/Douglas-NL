@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "entrances",
+  "info": {
+    "name": "Entrance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShopOurIconicsCTA": {
+      "type": "string",
+      "default": "SHOP OUR ICONICS"
+    },
+    "FindYourPerfectGiftCTA": {
+      "type": "string",
+      "default": "FIND YOUR PERFECT GIFT"
+    },
+    "ExploreOurExclusiveOffersCTA": {
+      "type": "string",
+      "default": "EXPLORE OUR EXCLUSIVE OFFERS"
+    }
+  }
+}

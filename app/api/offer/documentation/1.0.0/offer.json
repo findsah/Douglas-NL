@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/answers": {
+    "/offer": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the offer's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve offer document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Answer"
+                    "$ref": "#/components/schemas/Offer"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Offer"
         ],
         "parameters": [
           {
@@ -191,70 +191,9 @@
             "deprecated": false
           }
         ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
-              }
-            }
-          }
-        }
       }
     },
-    "/answers/count": {
+    "/offers/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +245,12 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Offer"
         ],
         "parameters": []
       }
     },
-    "/answers/{id}": {
+    "/offers/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +260,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Answer"
+                  "$ref": "#/components/schemas/Offer"
                 }
               }
             }
@@ -359,7 +298,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Offer"
         ],
         "parameters": [
           {
@@ -383,7 +322,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Answer"
+                  "$ref": "#/components/schemas/Offer"
                 }
               }
             }
@@ -421,7 +360,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Offer"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +368,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
+                "$ref": "#/components/schemas/NewOffer"
               }
             }
           }
@@ -495,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Offer"
         ],
         "parameters": [
           {
@@ -510,11 +449,74 @@
           }
         ]
       }
+    },
+    "/offers": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Offer"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Offer"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewOffer"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "Answer": {
+      "Offer": {
         "required": [
           "id"
         ],
@@ -522,33 +524,69 @@
           "id": {
             "type": "string"
           },
-          "Answer": {
+          "Title": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "THE ART OF GIFTING"
           },
-          "localizations": {
+          "Image": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Answer": {
+                "name": {
                   "type": "string"
                 },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
+                "alternativeText": {
                   "type": "string"
                 },
-                "published_at": {
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
                   "type": "string"
                 },
                 "created_by": {
@@ -560,8 +598,17 @@
               }
             }
           },
-          "locale": {
-            "type": "string"
+          "Description": {
+            "type": "string",
+            "default": "For any purchase exceeding 100€ receive an exclusive clutch to wrap up your gift"
+          },
+          "DiscoverCTA": {
+            "type": "string",
+            "default": "DISCOVER"
+          },
+          "DiscoverURL": {
+            "type": "string",
+            "default": "https://www.dior.com"
           },
           "published_at": {
             "type": "string",
@@ -569,20 +616,23 @@
           }
         }
       },
-      "NewAnswer": {
+      "NewOffer": {
         "properties": {
-          "Answer": {
+          "Title": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "THE ART OF GIFTING"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "Description": {
+            "type": "string",
+            "default": "For any purchase exceeding 100€ receive an exclusive clutch to wrap up your gift"
           },
-          "locale": {
-            "type": "string"
+          "DiscoverCTA": {
+            "type": "string",
+            "default": "DISCOVER"
+          },
+          "DiscoverURL": {
+            "type": "string",
+            "default": "https://www.dior.com"
           },
           "published_at": {
             "type": "string",
@@ -600,7 +650,7 @@
   },
   "tags": [
     {
-      "name": "Answer"
+      "name": "Offer"
     }
   ]
 }

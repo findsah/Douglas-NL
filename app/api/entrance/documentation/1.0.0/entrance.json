@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/answers": {
+    "/entrance": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the entrance's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve entrance document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Answer"
+                    "$ref": "#/components/schemas/Entrance"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Entrance"
         ],
         "parameters": [
           {
@@ -192,198 +192,16 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/answers/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "parameters": []
-      }
-    },
-    "/answers/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single entrance record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve entrance document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Answer"
+                  "$ref": "#/components/schemas/Entrance"
                 }
               }
             }
@@ -421,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Entrance"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +247,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
+                "$ref": "#/components/schemas/NewEntrance"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single entrance record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single entrance based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,26 +302,15 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Entrance"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Answer": {
+      "Entrance": {
         "required": [
           "id"
         ],
@@ -522,46 +318,17 @@
           "id": {
             "type": "string"
           },
-          "Answer": {
+          "ShopOurIconicsCTA": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "SHOP OUR ICONICS"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Answer": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "FindYourPerfectGiftCTA": {
+            "type": "string",
+            "default": "FIND YOUR PERFECT GIFT"
           },
-          "locale": {
-            "type": "string"
+          "ExploreOurExclusiveOffersCTA": {
+            "type": "string",
+            "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
           "published_at": {
             "type": "string",
@@ -569,20 +336,19 @@
           }
         }
       },
-      "NewAnswer": {
+      "NewEntrance": {
         "properties": {
-          "Answer": {
+          "ShopOurIconicsCTA": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "SHOP OUR ICONICS"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "FindYourPerfectGiftCTA": {
+            "type": "string",
+            "default": "FIND YOUR PERFECT GIFT"
           },
-          "locale": {
-            "type": "string"
+          "ExploreOurExclusiveOffersCTA": {
+            "type": "string",
+            "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
           "published_at": {
             "type": "string",
@@ -600,7 +366,7 @@
   },
   "tags": [
     {
-      "name": "Answer"
+      "name": "Entrance"
     }
   ]
 }

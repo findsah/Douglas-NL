@@ -35,17 +35,23 @@
     "questions": {
       "collection": "question"
     },
-    "answers": {
-      "collection": "answer"
-    },
-    "YOURPERFECTGIFTAWAITS": {
+    "YourPerfectGiftAwaits": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "string",
-      "default": "YOUR PERFECT GIFT AWAITS :"
+      "default": "YOUR PERFECT GIFT AWAITS:"
+    },
+    "YourConstellationIs": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "YOUR CONSTELLATION IS"
     }
   }
 }

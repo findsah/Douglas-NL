@@ -32,15 +32,7 @@
         }
       }
     },
-    "Price": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "Image": {
+    "Packshot": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -64,14 +56,6 @@
         }
       }
     },
-    "Size": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "URL": {
       "type": "string",
       "pluginOptions": {
@@ -79,6 +63,15 @@
           "localized": true
         }
       }
+    },
+    "EAN": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "PRD_1234"
     }
   }
 }

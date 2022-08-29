@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "constellations",
   "info": {
-    "name": "Constellation",
+    "name": "Constellations Result",
     "description": ""
   },
   "options": {
@@ -16,15 +16,6 @@
     }
   },
   "attributes": {
-    "Description": {
-      "type": "richtext",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "default": "A simple nymph, the beautiful Chloris became a goddess of flowers the day Zephyr, the gentle West Wind, blew in her direction.  Her floral empire will then extend beyond the Greek world thanks to the three exceptional gifts offered by Zephyr at the time of their marriage: the power to make flowers bloom, the magic flower of fertility and finally immortality.  From a discreet and reserved nymph was born a goddess with immense powers. "
-    },
     "Title": {
       "type": "string",
       "pluginOptions": {
@@ -34,55 +25,18 @@
       },
       "default": "CHLORIS, A NYMPTH WHO BECAME A QUEEN OF FLOWERS"
     },
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "products": {
       "collection": "products"
     },
-    "perfectGift": {
+    "Version": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
-      "type": "string",
-      "default": "YOUR PERFECT GIFT"
-    },
-    "YourConstellation": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "default": "YOUR CONSTELLATION"
-    },
-    "YourConstellationDescription": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "default": "PRESTIGE RITUAL"
-    },
-    "answer": {
-      "model": "answer",
-      "via": "constellations"
+      "type": "integer",
+      "default": 1,
+      "private": true
     }
   }
 }

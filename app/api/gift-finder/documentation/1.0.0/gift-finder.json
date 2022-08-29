@@ -369,49 +369,13 @@
               }
             }
           },
-          "answers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Answer": {
-                  "type": "string"
-                },
-                "constellations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "YOURPERFECTGIFTAWAITS": {
+          "YourPerfectGiftAwaits": {
             "type": "string",
-            "default": "YOUR PERFECT GIFT AWAITS :"
+            "default": "YOUR PERFECT GIFT AWAITS:"
+          },
+          "YourConstellationIs": {
+            "type": "string",
+            "default": "YOUR CONSTELLATION IS"
           },
           "localizations": {
             "type": "array",
@@ -435,13 +399,10 @@
                     "type": "string"
                   }
                 },
-                "answers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "YourPerfectGiftAwaits": {
+                  "type": "string"
                 },
-                "YOURPERFECTGIFTAWAITS": {
+                "YourConstellationIs": {
                   "type": "string"
                 },
                 "localizations": {
@@ -488,15 +449,13 @@
               "type": "string"
             }
           },
-          "answers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "YOURPERFECTGIFTAWAITS": {
+          "YourPerfectGiftAwaits": {
             "type": "string",
-            "default": "YOUR PERFECT GIFT AWAITS :"
+            "default": "YOUR PERFECT GIFT AWAITS:"
+          },
+          "YourConstellationIs": {
+            "type": "string",
+            "default": "YOUR CONSTELLATION IS"
           },
           "localizations": {
             "type": "array",

@@ -543,13 +543,7 @@
               "id": {
                 "type": "string"
               },
-              "Description": {
-                "type": "string"
-              },
               "Title": {
-                "type": "string"
-              },
-              "Image": {
                 "type": "string"
               },
               "products": {
@@ -558,17 +552,8 @@
                   "type": "string"
                 }
               },
-              "perfectGift": {
-                "type": "string"
-              },
-              "YourConstellation": {
-                "type": "string"
-              },
-              "YourConstellationDescription": {
-                "type": "string"
-              },
-              "answer": {
-                "type": "string"
+              "Version": {
+                "type": "integer"
               },
               "localizations": {
                 "type": "array",
@@ -603,12 +588,6 @@
                 "Answer": {
                   "type": "string"
                 },
-                "constellations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -630,6 +609,9 @@
               }
             }
           },
+          "Title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -646,6 +628,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "Title": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

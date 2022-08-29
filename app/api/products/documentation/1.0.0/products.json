@@ -528,10 +528,7 @@
           "Description": {
             "type": "string"
           },
-          "Price": {
-            "type": "string"
-          },
-          "Image": {
+          "Packshot": {
             "required": [
               "id",
               "name",
@@ -601,11 +598,12 @@
           "ButtonText": {
             "type": "string"
           },
-          "Size": {
-            "type": "string"
-          },
           "URL": {
             "type": "string"
+          },
+          "EAN": {
+            "type": "string",
+            "default": "PRD_1234"
           },
           "localizations": {
             "type": "array",
@@ -623,19 +621,16 @@
                 "Description": {
                   "type": "string"
                 },
-                "Price": {
-                  "type": "string"
-                },
-                "Image": {
+                "Packshot": {
                   "type": "string"
                 },
                 "ButtonText": {
                   "type": "string"
                 },
-                "Size": {
+                "URL": {
                   "type": "string"
                 },
-                "URL": {
+                "EAN": {
                   "type": "string"
                 },
                 "localizations": {
@@ -676,17 +671,15 @@
           "Description": {
             "type": "string"
           },
-          "Price": {
-            "type": "string"
-          },
           "ButtonText": {
-            "type": "string"
-          },
-          "Size": {
             "type": "string"
           },
           "URL": {
             "type": "string"
+          },
+          "EAN": {
+            "type": "string",
+            "default": "PRD_1234"
           },
           "localizations": {
             "type": "array",

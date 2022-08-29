@@ -522,80 +522,9 @@
           "id": {
             "type": "string"
           },
-          "Description": {
-            "type": "string",
-            "default": "A simple nymph, the beautiful Chloris became a goddess of flowers the day Zephyr, the gentle West Wind, blew in her direction.  Her floral empire will then extend beyond the Greek world thanks to the three exceptional gifts offered by Zephyr at the time of their marriage: the power to make flowers bloom, the magic flower of fertility and finally immortality.  From a discreet and reserved nymph was born a goddess with immense powers. "
-          },
           "Title": {
             "type": "string",
             "default": "CHLORIS, A NYMPTH WHO BECAME A QUEEN OF FLOWERS"
-          },
-          "Image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "products": {
             "type": "array",
@@ -613,19 +542,16 @@
                 "Description": {
                   "type": "string"
                 },
-                "Price": {
-                  "type": "string"
-                },
-                "Image": {
+                "Packshot": {
                   "type": "string"
                 },
                 "ButtonText": {
                   "type": "string"
                 },
-                "Size": {
+                "URL": {
                   "type": "string"
                 },
-                "URL": {
+                "EAN": {
                   "type": "string"
                 },
                 "localizations": {
@@ -649,55 +575,6 @@
               }
             }
           },
-          "perfectGift": {
-            "type": "string",
-            "default": "YOUR PERFECT GIFT"
-          },
-          "YourConstellation": {
-            "type": "string",
-            "default": "YOUR CONSTELLATION"
-          },
-          "YourConstellationDescription": {
-            "type": "string",
-            "default": "PRESTIGE RITUAL"
-          },
-          "answer": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Answer": {
-                "type": "string"
-              },
-              "constellations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -708,13 +585,7 @@
                 "id": {
                   "type": "string"
                 },
-                "Description": {
-                  "type": "string"
-                },
                 "Title": {
-                  "type": "string"
-                },
-                "Image": {
                   "type": "string"
                 },
                 "products": {
@@ -723,17 +594,8 @@
                     "type": "string"
                   }
                 },
-                "perfectGift": {
-                  "type": "string"
-                },
-                "YourConstellation": {
-                  "type": "string"
-                },
-                "YourConstellationDescription": {
-                  "type": "string"
-                },
-                "answer": {
-                  "type": "string"
+                "Version": {
+                  "type": "integer"
                 },
                 "localizations": {
                   "type": "array",
@@ -767,10 +629,6 @@
       },
       "NewConstellation": {
         "properties": {
-          "Description": {
-            "type": "string",
-            "default": "A simple nymph, the beautiful Chloris became a goddess of flowers the day Zephyr, the gentle West Wind, blew in her direction.  Her floral empire will then extend beyond the Greek world thanks to the three exceptional gifts offered by Zephyr at the time of their marriage: the power to make flowers bloom, the magic flower of fertility and finally immortality.  From a discreet and reserved nymph was born a goddess with immense powers. "
-          },
           "Title": {
             "type": "string",
             "default": "CHLORIS, A NYMPTH WHO BECAME A QUEEN OF FLOWERS"
@@ -781,20 +639,9 @@
               "type": "string"
             }
           },
-          "perfectGift": {
-            "type": "string",
-            "default": "YOUR PERFECT GIFT"
-          },
-          "YourConstellation": {
-            "type": "string",
-            "default": "YOUR CONSTELLATION"
-          },
-          "YourConstellationDescription": {
-            "type": "string",
-            "default": "PRESTIGE RITUAL"
-          },
-          "answer": {
-            "type": "string"
+          "Version": {
+            "type": "integer",
+            "default": 1
           },
           "localizations": {
             "type": "array",

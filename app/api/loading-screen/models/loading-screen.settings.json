@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "loading_screens",
+  "info": {
+    "name": "Loading Screen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SkipIntro": {
+      "type": "string",
+      "default": "SKIP INTRO"
+    }
+  }
+}

@@ -535,12 +535,6 @@
                 "Answer": {
                   "type": "string"
                 },
-                "constellations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "localizations": {
                   "type": "array",
                   "items": {

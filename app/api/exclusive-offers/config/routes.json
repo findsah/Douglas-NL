@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exclusive-offers",
+      "handler": "exclusive-offers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exclusive-offers",
+      "handler": "exclusive-offers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exclusive-offers",
+      "handler": "exclusive-offers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

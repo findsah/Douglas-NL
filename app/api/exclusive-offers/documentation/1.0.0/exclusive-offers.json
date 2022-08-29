@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/answers": {
+    "/exclusive-offers": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the exclusive-offers's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve exclusive-offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Answer"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Exclusive-offers"
         ],
         "parameters": [
           {
@@ -192,81 +193,18 @@
           }
         ]
       },
-      "post": {
+      "put": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Update a single exclusive-offers record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/answers/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve exclusive-offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,122 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
-        ],
-        "parameters": []
-      }
-    },
-    "/answers/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Answer"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Answer"
+          "Exclusive-offers"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +252,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnswer"
+                "$ref": "#/components/schemas/NewExclusive-offers"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single exclusive-offers record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single exclusive-offers based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,26 +307,15 @@
         },
         "summary": "",
         "tags": [
-          "Answer"
+          "Exclusive-offers"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Answer": {
+      "Exclusive-offers": {
         "required": [
           "id"
         ],
@@ -522,11 +323,11 @@
           "id": {
             "type": "string"
           },
-          "Answer": {
+          "ExploreOurExclusiveOffers": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "localizations": {
+          "offers": {
             "type": "array",
             "items": {
               "required": [
@@ -536,16 +337,22 @@
                 "id": {
                   "type": "string"
                 },
-                "Answer": {
+                "Title": {
                   "type": "string"
                 },
-                "localizations": {
+                "Image": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "locale": {
+                "Description": {
+                  "type": "string"
+                },
+                "DiscoverCTA": {
+                  "type": "string"
+                },
+                "DiscoverURL": {
                   "type": "string"
                 },
                 "published_at": {
@@ -560,29 +367,23 @@
               }
             }
           },
-          "locale": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewAnswer": {
+      "NewExclusive-offers": {
         "properties": {
-          "Answer": {
+          "ExploreOurExclusiveOffers": {
             "type": "string",
-            "default": "MASCULINE"
+            "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "localizations": {
+          "offers": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "locale": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -598,9 +399,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Answer"
-    }
-  ]
+  "tags": []
 }

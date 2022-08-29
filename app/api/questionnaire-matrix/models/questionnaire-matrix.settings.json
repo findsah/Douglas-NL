@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "questionnaire_matrices",
   "info": {
-    "name": "Questionnaire matrix",
+    "name": "Matrices",
     "description": ""
   },
   "options": {
@@ -17,6 +17,9 @@
     },
     "answers": {
       "collection": "answer"
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }

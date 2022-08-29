@@ -23,10 +23,6 @@
       },
       "type": "string",
       "default": "MASCULINE"
-    },
-    "constellations": {
-      "via": "answer",
-      "collection": "constellation"
     }
   }
 }

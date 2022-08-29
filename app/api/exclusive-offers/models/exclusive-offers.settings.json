@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "exclusive_offers",
+  "info": {
+    "name": "Exclusive Offers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ExploreOurExclusiveOffers": {
+      "type": "string",
+      "default": "EXPLORE OUR EXCLUSIVE OFFERS"
+    },
+    "offers": {
+      "collection": "offer"
+    }
+  }
+}

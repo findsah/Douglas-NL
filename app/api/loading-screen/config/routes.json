@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/loading-screen",
+      "handler": "loading-screen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/loading-screen",
+      "handler": "loading-screen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/loading-screen",
+      "handler": "loading-screen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
