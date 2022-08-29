@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/questionnaire-matrices": {
+    "/dining": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the dining's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Dining"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining"
         ],
         "parameters": [
           {
@@ -193,210 +192,16 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewQuestionnaire-matrix"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/questionnaire-matrices/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "parameters": []
-      }
-    },
-    "/questionnaire-matrices/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single dining record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Dining"
                 }
               }
             }
@@ -434,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining"
         ],
         "requestBody": {
           "description": "",
@@ -442,30 +247,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewQuestionnaire-matrix"
+                "$ref": "#/components/schemas/NewDining"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single dining record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single dining based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,105 +302,29 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/questionnaire-matrices/answer": {
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "properties": {
-                  "foo": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Questionnaire-matrix": {
+      "Dining": {
         "required": [
-          "id"
+          "id",
+          "JadoreCTA",
+          "MissDiorCTA",
+          "SauvageCTA",
+          "MakeupCTA",
+          "SkincareCTA",
+          "EntranceHallCTA"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "constellation": {
+          "Jadore": {
             "required": [
               "id"
             ],
@@ -617,23 +335,14 @@
               "Title": {
                 "type": "string"
               },
+              "Description": {
+                "type": "string"
+              },
               "products": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "Version": {
-                "type": "integer"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "locale": {
-                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -646,42 +355,153 @@
               }
             }
           },
-          "answers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Answer": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "MissDior": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "products": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "Title": {
-            "type": "string"
+          "Sauvage": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Makeup": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Skincare": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "JadoreCTA": {
+            "type": "string",
+            "default": "J'ADORE"
+          },
+          "MissDiorCTA": {
+            "type": "string",
+            "default": "MISS DIOR"
+          },
+          "SauvageCTA": {
+            "type": "string",
+            "default": "SAUVAGE"
+          },
+          "MakeupCTA": {
+            "type": "string",
+            "default": "MAKE UP"
+          },
+          "SkincareCTA": {
+            "type": "string",
+            "default": "SKINCARE"
+          },
+          "EntranceHallCTA": {
+            "type": "string",
+            "default": "ENTRANCE HALL"
           },
           "published_at": {
             "type": "string",
@@ -689,19 +509,54 @@
           }
         }
       },
-      "NewQuestionnaire-matrix": {
+      "NewDining": {
+        "required": [
+          "JadoreCTA",
+          "MissDiorCTA",
+          "SauvageCTA",
+          "MakeupCTA",
+          "SkincareCTA",
+          "EntranceHallCTA"
+        ],
         "properties": {
-          "constellation": {
+          "Jadore": {
             "type": "string"
           },
-          "answers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "Title": {
+          "MissDior": {
             "type": "string"
+          },
+          "Sauvage": {
+            "type": "string"
+          },
+          "Makeup": {
+            "type": "string"
+          },
+          "Skincare": {
+            "type": "string"
+          },
+          "JadoreCTA": {
+            "type": "string",
+            "default": "J'ADORE"
+          },
+          "MissDiorCTA": {
+            "type": "string",
+            "default": "MISS DIOR"
+          },
+          "SauvageCTA": {
+            "type": "string",
+            "default": "SAUVAGE"
+          },
+          "MakeupCTA": {
+            "type": "string",
+            "default": "MAKE UP"
+          },
+          "SkincareCTA": {
+            "type": "string",
+            "default": "SKINCARE"
+          },
+          "EntranceHallCTA": {
+            "type": "string",
+            "default": "ENTRANCE HALL"
           },
           "published_at": {
             "type": "string",
@@ -717,5 +572,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Dining"
+    }
+  ]
 }

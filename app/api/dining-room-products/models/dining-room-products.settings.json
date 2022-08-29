@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dining_room_products",
+  "info": {
+    "name": "DiningRoomProducts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "MAKE UP"
+    },
+    "Description": {
+      "type": "text",
+      "default": "The 1st revitalising serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalise the skin twice as fast and visible rejuvenate."
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

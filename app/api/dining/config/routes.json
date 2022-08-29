@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dining",
+      "handler": "dining.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dining",
+      "handler": "dining.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dining",
+      "handler": "dining.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "dropdown_menus",
+  "info": {
+    "name": "Dropdown Menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FindYourPerfectGift": {
+      "type": "string",
+      "default": "FIND YOUR PERFECT GIFT",
+      "required": true
+    },
+    "ExploreOurExclusiveOffers": {
+      "type": "string",
+      "default": "EXPLORE OUR EXCLUSIVE OFFERS",
+      "required": true
+    },
+    "Home": {
+      "type": "string",
+      "default": "HOME",
+      "required": true
+    },
+    "ShopOurIconics": {
+      "type": "string",
+      "default": "SHOP OUR ICONICS"
+    }
+  }
+}

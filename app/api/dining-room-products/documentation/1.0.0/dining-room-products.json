@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/questionnaire-matrices": {
+    "/dining-room-products": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the dining-room-products's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining-room-products document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new dining-room-products record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining-room-products document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewQuestionnaire-matrix"
+                "$ref": "#/components/schemas/NewDining-room-products"
               }
             }
           }
         }
       }
     },
-    "/questionnaire-matrices/count": {
+    "/dining-room-products/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of dining-room-products documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining-room-products document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "parameters": []
       }
     },
-    "/questionnaire-matrices/{id}": {
+    "/dining-room-products/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one dining-room-products record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining-room-products document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single dining-room-products record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve dining-room-products document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewQuestionnaire-matrix"
+                "$ref": "#/components/schemas/NewDining-room-products"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single dining-room-products record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single dining-room-products based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Questionnaire-matrix"
+          "Dining-room-products"
         ],
         "parameters": [
           {
@@ -523,82 +523,11 @@
           }
         ]
       }
-    },
-    "/questionnaire-matrices/answer": {
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "properties": {
-                  "foo": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
     "schemas": {
-      "Questionnaire-matrix": {
+      "Dining-room-products": {
         "required": [
           "id"
         ],
@@ -606,47 +535,15 @@
           "id": {
             "type": "string"
           },
-          "constellation": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Title": {
-                "type": "string"
-              },
-              "products": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "Version": {
-                "type": "integer"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "Title": {
+            "type": "string",
+            "default": "MAKE UP"
           },
-          "answers": {
+          "Description": {
+            "type": "string",
+            "default": "The 1st revitalising serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalise the skin twice as fast and visible rejuvenate."
+          },
+          "products": {
             "type": "array",
             "items": {
               "required": [
@@ -656,7 +553,22 @@
                 "id": {
                   "type": "string"
                 },
-                "Answer": {
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Packshot": {
+                  "type": "string"
+                },
+                "ButtonText": {
+                  "type": "string"
+                },
+                "URL": {
+                  "type": "string"
+                },
+                "EAN": {
                   "type": "string"
                 },
                 "localizations": {
@@ -680,28 +592,27 @@
               }
             }
           },
-          "Title": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewQuestionnaire-matrix": {
+      "NewDining-room-products": {
         "properties": {
-          "constellation": {
-            "type": "string"
+          "Title": {
+            "type": "string",
+            "default": "MAKE UP"
           },
-          "answers": {
+          "Description": {
+            "type": "string",
+            "default": "The 1st revitalising serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalise the skin twice as fast and visible rejuvenate."
+          },
+          "products": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "Title": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

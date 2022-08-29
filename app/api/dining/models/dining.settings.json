@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "dinings",
+  "info": {
+    "name": "Dining",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Jadore": {
+      "model": "dining-room-products"
+    },
+    "MissDior": {
+      "model": "dining-room-products"
+    },
+    "Sauvage": {
+      "model": "dining-room-products"
+    },
+    "Makeup": {
+      "model": "dining-room-products"
+    },
+    "Skincare": {
+      "model": "dining-room-products"
+    },
+    "JadoreCTA": {
+      "type": "string",
+      "default": "J'ADORE",
+      "required": true
+    },
+    "MissDiorCTA": {
+      "type": "string",
+      "default": "MISS DIOR",
+      "required": true
+    },
+    "SauvageCTA": {
+      "type": "string",
+      "default": "SAUVAGE",
+      "required": true
+    },
+    "MakeupCTA": {
+      "type": "string",
+      "default": "MAKE UP",
+      "required": true
+    },
+    "SkincareCTA": {
+      "type": "string",
+      "default": "SKINCARE",
+      "required": true
+    },
+    "EntranceHallCTA": {
+      "type": "string",
+      "default": "ENTRANCE HALL",
+      "required": true
+    }
+  }
+}
