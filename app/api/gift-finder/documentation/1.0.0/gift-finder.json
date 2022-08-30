@@ -348,6 +348,9 @@
                 "Question": {
                   "type": "string"
                 },
+                "ButtonSizes": {
+                  "type": "object"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

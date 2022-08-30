@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/29/2022 10:01:37 PM"
+    "x-generation-date": "08/30/2022 4:48:35 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8638,6 +8638,9 @@
                 "Question": {
                   "type": "string"
                 },
+                "ButtonSizes": {
+                  "type": "object"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -9168,6 +9171,9 @@
             "type": "string",
             "default": "In which universe would you like your present to be?"
           },
+          "ButtonSizes": {
+            "type": "object"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -9186,6 +9192,9 @@
                 },
                 "Question": {
                   "type": "string"
+                },
+                "ButtonSizes": {
+                  "type": "object"
                 },
                 "localizations": {
                   "type": "array",
@@ -9228,6 +9237,9 @@
           "Question": {
             "type": "string",
             "default": "In which universe would you like your present to be?"
+          },
+          "ButtonSizes": {
+            "type": "object"
           },
           "localizations": {
             "type": "array",
