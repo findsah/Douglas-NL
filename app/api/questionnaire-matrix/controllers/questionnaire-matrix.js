@@ -11,7 +11,7 @@ module.exports = {
         const answer = ctx.request.body;
         let ids= []
         for(let ans of answer){ids.push(ans.id)}
-        const results = await strapi.query('questionnaire-matrix').findOne({"answers.id":ids[0],"answers.id":ids[1],"answers.id":ids[2]},["constellations","constellations.products"]);
+        const results = await strapi.query('questionnaire-matrix').findOne({"answers.id":ids[0],"answers.id":ids[1],"answers.id":ids[2]},["constellation","constellation.products"]);
         
         return results;
     }
