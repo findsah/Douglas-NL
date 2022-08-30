@@ -19,7 +19,12 @@
       "collection": "answer"
     },
     "Title": {
-      "type": "string"
+      "type": "string",
+      "private": true
+    },
+    "Version": {
+      "type": "string",
+      "private": true
     }
   }
 }

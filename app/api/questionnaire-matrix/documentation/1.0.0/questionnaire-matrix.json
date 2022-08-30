@@ -680,9 +680,6 @@
               }
             }
           },
-          "Title": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -701,6 +698,9 @@
             }
           },
           "Title": {
+            "type": "string"
+          },
+          "Version": {
             "type": "string"
           },
           "published_at": {
