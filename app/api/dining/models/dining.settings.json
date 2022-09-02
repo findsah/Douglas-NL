@@ -12,21 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Jadore": {
-      "model": "dining-room-products"
-    },
-    "MissDior": {
-      "model": "dining-room-products"
-    },
-    "Sauvage": {
-      "model": "dining-room-products"
-    },
-    "Makeup": {
-      "model": "dining-room-products"
-    },
-    "Skincare": {
-      "model": "dining-room-products"
-    },
     "JadoreCTA": {
       "type": "string",
       "default": "J'ADORE",
@@ -59,6 +44,31 @@
     },
     "VideoURL": {
       "type": "string"
+    },
+    "Jadore": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popin.popin-products"
+    },
+    "MissDior": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popin.popin-products"
+    },
+    "Sauvage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popin.popin-products"
+    },
+    "MakeUp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popin.popin-products"
+    },
+    "Skincare": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popin.popin-products"
     }
   }
 }

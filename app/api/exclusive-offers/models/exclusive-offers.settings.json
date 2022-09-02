@@ -16,8 +16,20 @@
       "type": "string",
       "default": "EXPLORE OUR EXCLUSIVE OFFERS"
     },
-    "offers": {
-      "collection": "offer"
+    "TheArtOfGifting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "exclusive-offer.the-art-of-gifting"
+    },
+    "ExclusiveAttentionFromDior": {
+      "type": "component",
+      "repeatable": false,
+      "component": "exclusive-offer.the-art-of-gifting"
+    },
+    "TheArtOfGifting2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "exclusive-offer.the-art-of-gifting"
     }
   }
 }

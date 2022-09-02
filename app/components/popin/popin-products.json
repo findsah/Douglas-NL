@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_popin_popin_products",
+  "info": {
+    "name": "Popin Products",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Products": {
+      "collection": "products"
+    },
+    "DiscoverCTA": {
+      "type": "string",
+      "default": "DISCOVER"
+    },
+    "DiscoverURL": {
+      "type": "string"
+    }
+  }
+}

@@ -327,43 +327,297 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "offers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Title": {
-                  "type": "string"
-                },
-                "Image": {
-                  "type": "array",
-                  "items": {
+          "TheArtOfGifting": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
                     "type": "string"
                   }
-                },
-                "Description": {
-                  "type": "string"
-                },
-                "DiscoverCTA": {
-                  "type": "string"
-                },
-                "DiscoverURL": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
                 }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
+              }
+            }
+          },
+          "ExclusiveAttentionFromDior": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
+              }
+            }
+          },
+          "TheArtOfGifting2": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
               }
             }
           },
@@ -379,10 +633,298 @@
             "type": "string",
             "default": "EXPLORE OUR EXCLUSIVE OFFERS"
           },
-          "offers": {
-            "type": "array",
-            "items": {
-              "type": "string"
+          "TheArtOfGifting": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
+              }
+            }
+          },
+          "ExclusiveAttentionFromDior": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
+              }
+            }
+          },
+          "TheArtOfGifting2": {
+            "type": "object",
+            "required": [
+              "id",
+              "Title",
+              "Description",
+              "DiscoverCTA",
+              "DiscoverURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string",
+                "default": "THE ART OF GIFTING"
+              },
+              "Image": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Description": {
+                "type": "string",
+                "default": "For any purchase exceeding 100 € receive an exclusive clutch to wrap up your gift"
+              },
+              "DiscoverCTA": {
+                "type": "string",
+                "default": "DISCOVER"
+              },
+              "DiscoverURL": {
+                "type": "string",
+                "default": "www.dior.com"
+              }
             }
           },
           "published_at": {
