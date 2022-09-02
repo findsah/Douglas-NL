@@ -623,8 +623,20 @@
                   "type": "string"
                 }
               },
-              "Version": {
+              "videoId": {
                 "type": "integer"
+              },
+              "TitleVersion": {
+                "type": "string"
+              },
+              "Answer1": {
+                "type": "string"
+              },
+              "Answer2": {
+                "type": "string"
+              },
+              "Answer3": {
+                "type": "string"
               },
               "localizations": {
                 "type": "array",

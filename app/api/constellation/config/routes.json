@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/questionnaire-matrices/answer",
+      "handler": "constellation.findConstellation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/constellations/:id",
       "handler": "constellation.update",

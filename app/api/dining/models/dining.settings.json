@@ -56,6 +56,9 @@
       "type": "string",
       "default": "ENTRANCE HALL",
       "required": true
+    },
+    "VideoURL": {
+      "type": "string"
     }
   }
 }

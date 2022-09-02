@@ -344,6 +344,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -374,6 +377,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -406,6 +412,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -437,6 +446,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -467,6 +479,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -502,6 +517,9 @@
           "EntranceHallCTA": {
             "type": "string",
             "default": "ENTRANCE HALL"
+          },
+          "VideoURL": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -557,6 +575,9 @@
           "EntranceHallCTA": {
             "type": "string",
             "default": "ENTRANCE HALL"
+          },
+          "VideoURL": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

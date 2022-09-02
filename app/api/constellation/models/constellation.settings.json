@@ -28,15 +28,32 @@
     "products": {
       "collection": "products"
     },
-    "Version": {
+    "videoId": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
       "type": "integer",
-      "default": 1,
+      "default": 0
+    },
+    "TitleVersion": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
       "private": true
+    },
+    "Answer1": {
+      "model": "answer"
+    },
+    "Answer2": {
+      "model": "answer"
+    },
+    "Answer3": {
+      "model": "answer"
     }
   }
 }

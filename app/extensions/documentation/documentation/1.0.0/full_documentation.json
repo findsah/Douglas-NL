@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/30/2022 6:19:11 PM"
+    "x-generation-date": "09/02/2022 10:35:18 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1065,6 +1065,77 @@
             }
           }
         ]
+      }
+    },
+    "/questionnaire-matrices/answer": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Questionnaire-matrix"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/dining-room-products": {
@@ -5512,77 +5583,6 @@
         ]
       }
     },
-    "/questionnaire-matrices/answer": {
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Questionnaire-matrix"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "properties": {
-                  "foo": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/email/": {
       "post": {
         "deprecated": false,
@@ -7955,6 +7955,103 @@
               }
             }
           },
+          "videoId": {
+            "type": "integer",
+            "default": 0
+          },
+          "Answer1": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Answer": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Answer2": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Answer": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Answer3": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Answer": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -7974,8 +8071,20 @@
                     "type": "string"
                   }
                 },
-                "Version": {
+                "videoId": {
                   "type": "integer"
+                },
+                "TitleVersion": {
+                  "type": "string"
+                },
+                "Answer1": {
+                  "type": "string"
+                },
+                "Answer2": {
+                  "type": "string"
+                },
+                "Answer3": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -8019,9 +8128,21 @@
               "type": "string"
             }
           },
-          "Version": {
+          "videoId": {
             "type": "integer",
-            "default": 1
+            "default": 0
+          },
+          "TitleVersion": {
+            "type": "string"
+          },
+          "Answer1": {
+            "type": "string"
+          },
+          "Answer2": {
+            "type": "string"
+          },
+          "Answer3": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8109,6 +8230,73 @@
               }
             }
           },
+          "Image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8177,6 +8365,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -8207,6 +8398,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -8239,6 +8433,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -8270,6 +8467,9 @@
                   "type": "string"
                 }
               },
+              "Image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -8300,6 +8500,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "Image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -8335,6 +8538,9 @@
           "EntranceHallCTA": {
             "type": "string",
             "default": "ENTRANCE HALL"
+          },
+          "VideoURL": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -8390,6 +8596,9 @@
           "EntranceHallCTA": {
             "type": "string",
             "default": "ENTRANCE HALL"
+          },
+          "VideoURL": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -9287,8 +9496,20 @@
                   "type": "string"
                 }
               },
-              "Version": {
+              "videoId": {
                 "type": "integer"
+              },
+              "TitleVersion": {
+                "type": "string"
+              },
+              "Answer1": {
+                "type": "string"
+              },
+              "Answer2": {
+                "type": "string"
+              },
+              "Answer3": {
+                "type": "string"
               },
               "localizations": {
                 "type": "array",
