@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "Description": {
       "type": "string",
@@ -30,18 +31,19 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "Packshot": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -54,7 +56,9 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "default": "SHOP NOW",
+      "required": true
     },
     "URL": {
       "type": "string",
@@ -62,7 +66,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "EAN": {
       "pluginOptions": {
@@ -71,7 +76,8 @@
         }
       },
       "type": "string",
-      "default": "PRD_1234"
+      "default": "PRD_1234",
+      "required": true
     }
   }
 }

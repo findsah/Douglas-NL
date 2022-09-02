@@ -516,7 +516,13 @@
     "schemas": {
       "Products": {
         "required": [
-          "id"
+          "id",
+          "Title",
+          "Description",
+          "Packshot",
+          "ButtonText",
+          "URL",
+          "EAN"
         ],
         "properties": {
           "id": {
@@ -596,7 +602,8 @@
             }
           },
           "ButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "SHOP NOW"
           },
           "URL": {
             "type": "string"
@@ -609,7 +616,13 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "Title",
+                "Description",
+                "Packshot",
+                "ButtonText",
+                "URL",
+                "EAN"
               ],
               "properties": {
                 "id": {
@@ -664,6 +677,13 @@
         }
       },
       "NewProducts": {
+        "required": [
+          "Title",
+          "Description",
+          "ButtonText",
+          "URL",
+          "EAN"
+        ],
         "properties": {
           "Title": {
             "type": "string"
@@ -672,7 +692,8 @@
             "type": "string"
           },
           "ButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "SHOP NOW"
           },
           "URL": {
             "type": "string"

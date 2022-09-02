@@ -437,7 +437,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -577,7 +583,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -717,7 +729,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -857,7 +875,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -997,7 +1021,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -1180,7 +1210,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -1320,7 +1356,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -1460,7 +1502,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -1600,7 +1648,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
@@ -1740,7 +1794,13 @@
                 "type": "array",
                 "items": {
                   "required": [
-                    "id"
+                    "id",
+                    "Title",
+                    "Description",
+                    "Packshot",
+                    "ButtonText",
+                    "URL",
+                    "EAN"
                   ],
                   "properties": {
                     "id": {
