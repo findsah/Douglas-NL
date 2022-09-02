@@ -587,7 +587,9 @@
     "schemas": {
       "Constellation": {
         "required": [
-          "id"
+          "id",
+          "Title",
+          "videoId"
         ],
         "properties": {
           "id": {
@@ -753,7 +755,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "Title",
+                "videoId"
               ],
               "properties": {
                 "id": {
@@ -814,6 +818,10 @@
         }
       },
       "NewConstellation": {
+        "required": [
+          "Title",
+          "videoId"
+        ],
         "properties": {
           "Title": {
             "type": "string",

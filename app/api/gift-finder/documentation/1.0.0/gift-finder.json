@@ -317,7 +317,11 @@
     "schemas": {
       "Gift-finder": {
         "required": [
-          "id"
+          "id",
+          "GiftFinderTitle",
+          "StartButtonText",
+          "YourPerfectGiftAwaits",
+          "YourConstellationIs"
         ],
         "properties": {
           "id": {
@@ -327,7 +331,8 @@
             "type": "string"
           },
           "StartButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "START"
           },
           "questions": {
             "type": "array",
@@ -384,7 +389,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "GiftFinderTitle",
+                "StartButtonText",
+                "YourPerfectGiftAwaits",
+                "YourConstellationIs"
               ],
               "properties": {
                 "id": {
@@ -439,12 +448,19 @@
         }
       },
       "NewGift-finder": {
+        "required": [
+          "GiftFinderTitle",
+          "StartButtonText",
+          "YourPerfectGiftAwaits",
+          "YourConstellationIs"
+        ],
         "properties": {
           "GiftFinderTitle": {
             "type": "string"
           },
           "StartButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "START"
           },
           "questions": {
             "type": "array",

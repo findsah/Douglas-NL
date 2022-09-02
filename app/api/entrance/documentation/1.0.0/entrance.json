@@ -312,7 +312,10 @@
     "schemas": {
       "Entrance": {
         "required": [
-          "id"
+          "id",
+          "ShopOurIconicsCTA",
+          "FindYourPerfectGiftCTA",
+          "ExploreOurExclusiveOffersCTA"
         ],
         "properties": {
           "id": {
@@ -337,6 +340,11 @@
         }
       },
       "NewEntrance": {
+        "required": [
+          "ShopOurIconicsCTA",
+          "FindYourPerfectGiftCTA",
+          "ExploreOurExclusiveOffersCTA"
+        ],
         "properties": {
           "ShopOurIconicsCTA": {
             "type": "string",

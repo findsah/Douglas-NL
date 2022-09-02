@@ -8,21 +8,23 @@
   "options": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "Products": {
@@ -30,10 +32,12 @@
     },
     "DiscoverCTA": {
       "type": "string",
-      "default": "DISCOVER"
+      "default": "DISCOVER",
+      "required": true
     },
     "DiscoverURL": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

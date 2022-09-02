@@ -14,12 +14,14 @@
   "attributes": {
     "ExploreOurExclusiveOffers": {
       "type": "string",
-      "default": "EXPLORE OUR EXCLUSIVE OFFERS"
+      "default": "EXPLORE OUR EXCLUSIVE OFFERS",
+      "required": true
     },
     "TheArtOfGifting": {
       "type": "component",
       "repeatable": false,
-      "component": "exclusive-offer.the-art-of-gifting"
+      "component": "exclusive-offer.the-art-of-gifting",
+      "required": true
     },
     "ExclusiveAttentionFromDior": {
       "type": "component",

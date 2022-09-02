@@ -2,7 +2,8 @@
   "collectionName": "components_exclusive_offer_the_art_of_giftings",
   "info": {
     "name": "TheArtOfGifting",
-    "icon": "igloo"
+    "icon": "igloo",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,12 +16,12 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "Description": {

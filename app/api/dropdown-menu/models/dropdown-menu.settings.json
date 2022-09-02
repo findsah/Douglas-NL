@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "dropdown_menus",
   "info": {
-    "name": "Dropdown Menu"
+    "name": "Dropdown Menu",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,7 +29,8 @@
     },
     "ShopOurIconics": {
       "type": "string",
-      "default": "SHOP OUR ICONICS"
+      "default": "SHOP OUR ICONICS",
+      "required": true
     }
   }
 }

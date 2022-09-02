@@ -23,7 +23,8 @@
           "localized": true
         }
       },
-      "default": "CHLORIS, A NYMPTH WHO BECAME A QUEEN OF FLOWERS"
+      "default": "CHLORIS, A NYMPTH WHO BECAME A QUEEN OF FLOWERS",
+      "required": true
     },
     "products": {
       "collection": "products"
@@ -35,7 +36,8 @@
         }
       },
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "required": true
     },
     "TitleVersion": {
       "pluginOptions": {

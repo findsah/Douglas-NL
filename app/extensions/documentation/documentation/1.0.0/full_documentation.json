@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2022 12:28:04 PM"
+    "x-generation-date": "09/02/2022 12:34:34 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6335,7 +6335,9 @@
       },
       "Constellation": {
         "required": [
-          "id"
+          "id",
+          "Title",
+          "videoId"
         ],
         "properties": {
           "id": {
@@ -6501,7 +6503,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "Title",
+                "videoId"
               ],
               "properties": {
                 "id": {
@@ -6562,6 +6566,10 @@
         }
       },
       "NewConstellation": {
+        "required": [
+          "Title",
+          "videoId"
+        ],
         "properties": {
           "Title": {
             "type": "string",
@@ -6618,7 +6626,8 @@
           "SauvageCTA",
           "MakeupCTA",
           "SkincareCTA",
-          "EntranceHallCTA"
+          "EntranceHallCTA",
+          "VideoURL"
         ],
         "properties": {
           "id": {
@@ -6654,7 +6663,12 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -6800,7 +6814,12 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -6946,7 +6965,12 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7092,7 +7116,12 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7238,7 +7267,12 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7394,7 +7428,8 @@
           "SauvageCTA",
           "MakeupCTA",
           "SkincareCTA",
-          "EntranceHallCTA"
+          "EntranceHallCTA",
+          "VideoURL"
         ],
         "properties": {
           "JadoreCTA": {
@@ -7427,7 +7462,12 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7573,7 +7613,12 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7719,7 +7764,12 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -7865,7 +7915,12 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -8011,7 +8066,12 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -8171,7 +8231,8 @@
           "id",
           "FindYourPerfectGift",
           "ExploreOurExclusiveOffers",
-          "Home"
+          "Home",
+          "ShopOurIconics"
         ],
         "properties": {
           "id": {
@@ -8203,7 +8264,8 @@
         "required": [
           "FindYourPerfectGift",
           "ExploreOurExclusiveOffers",
-          "Home"
+          "Home",
+          "ShopOurIconics"
         ],
         "properties": {
           "FindYourPerfectGift": {
@@ -8236,7 +8298,10 @@
       },
       "Entrance": {
         "required": [
-          "id"
+          "id",
+          "ShopOurIconicsCTA",
+          "FindYourPerfectGiftCTA",
+          "ExploreOurExclusiveOffersCTA"
         ],
         "properties": {
           "id": {
@@ -8261,6 +8326,11 @@
         }
       },
       "NewEntrance": {
+        "required": [
+          "ShopOurIconicsCTA",
+          "FindYourPerfectGiftCTA",
+          "ExploreOurExclusiveOffersCTA"
+        ],
         "properties": {
           "ShopOurIconicsCTA": {
             "type": "string",
@@ -8288,7 +8358,9 @@
       },
       "Exclusive-offers": {
         "required": [
-          "id"
+          "id",
+          "ExploreOurExclusiveOffers",
+          "TheArtOfGifting"
         ],
         "properties": {
           "id": {
@@ -8303,6 +8375,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8401,6 +8474,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8499,6 +8573,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8599,6 +8674,10 @@
         }
       },
       "NewExclusive-offers": {
+        "required": [
+          "ExploreOurExclusiveOffers",
+          "TheArtOfGifting"
+        ],
         "properties": {
           "ExploreOurExclusiveOffers": {
             "type": "string",
@@ -8609,6 +8688,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8707,6 +8787,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8805,6 +8886,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -8912,7 +8994,11 @@
       },
       "Gift-finder": {
         "required": [
-          "id"
+          "id",
+          "GiftFinderTitle",
+          "StartButtonText",
+          "YourPerfectGiftAwaits",
+          "YourConstellationIs"
         ],
         "properties": {
           "id": {
@@ -8922,7 +9008,8 @@
             "type": "string"
           },
           "StartButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "START"
           },
           "questions": {
             "type": "array",
@@ -8979,7 +9066,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "GiftFinderTitle",
+                "StartButtonText",
+                "YourPerfectGiftAwaits",
+                "YourConstellationIs"
               ],
               "properties": {
                 "id": {
@@ -9034,12 +9125,19 @@
         }
       },
       "NewGift-finder": {
+        "required": [
+          "GiftFinderTitle",
+          "StartButtonText",
+          "YourPerfectGiftAwaits",
+          "YourConstellationIs"
+        ],
         "properties": {
           "GiftFinderTitle": {
             "type": "string"
           },
           "StartButtonText": {
-            "type": "string"
+            "type": "string",
+            "default": "START"
           },
           "questions": {
             "type": "array",

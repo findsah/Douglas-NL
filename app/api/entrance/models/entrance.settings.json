@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "entrances",
   "info": {
-    "name": "Entrance"
+    "name": "Entrance",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,15 +14,18 @@
   "attributes": {
     "ShopOurIconicsCTA": {
       "type": "string",
-      "default": "SHOP OUR ICONICS"
+      "default": "SHOP OUR ICONICS",
+      "required": true
     },
     "FindYourPerfectGiftCTA": {
       "type": "string",
-      "default": "FIND YOUR PERFECT GIFT"
+      "default": "FIND YOUR PERFECT GIFT",
+      "required": true
     },
     "ExploreOurExclusiveOffersCTA": {
       "type": "string",
-      "default": "EXPLORE OUR EXCLUSIVE OFFERS"
+      "default": "EXPLORE OUR EXCLUSIVE OFFERS",
+      "required": true
     }
   }
 }

@@ -43,7 +43,8 @@
       "required": true
     },
     "VideoURL": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Jadore": {
       "type": "component",

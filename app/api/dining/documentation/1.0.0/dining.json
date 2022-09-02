@@ -318,7 +318,8 @@
           "SauvageCTA",
           "MakeupCTA",
           "SkincareCTA",
-          "EntranceHallCTA"
+          "EntranceHallCTA",
+          "VideoURL"
         ],
         "properties": {
           "id": {
@@ -354,7 +355,12 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -500,7 +506,12 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -646,7 +657,12 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -792,7 +808,12 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -938,7 +959,12 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -1094,7 +1120,8 @@
           "SauvageCTA",
           "MakeupCTA",
           "SkincareCTA",
-          "EntranceHallCTA"
+          "EntranceHallCTA",
+          "VideoURL"
         ],
         "properties": {
           "JadoreCTA": {
@@ -1127,7 +1154,12 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -1273,7 +1305,12 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -1419,7 +1456,12 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -1565,7 +1607,12 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {
@@ -1711,7 +1758,12 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "Title",
+              "Description",
+              "Image",
+              "DiscoverCTA",
+              "DiscoverURL"
             ],
             "properties": {
               "id": {

@@ -320,7 +320,8 @@
           "id",
           "FindYourPerfectGift",
           "ExploreOurExclusiveOffers",
-          "Home"
+          "Home",
+          "ShopOurIconics"
         ],
         "properties": {
           "id": {
@@ -352,7 +353,8 @@
         "required": [
           "FindYourPerfectGift",
           "ExploreOurExclusiveOffers",
-          "Home"
+          "Home",
+          "ShopOurIconics"
         ],
         "properties": {
           "FindYourPerfectGift": {

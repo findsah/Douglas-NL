@@ -317,7 +317,9 @@
     "schemas": {
       "Exclusive-offers": {
         "required": [
-          "id"
+          "id",
+          "ExploreOurExclusiveOffers",
+          "TheArtOfGifting"
         ],
         "properties": {
           "id": {
@@ -332,6 +334,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -430,6 +433,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -528,6 +532,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -628,6 +633,10 @@
         }
       },
       "NewExclusive-offers": {
+        "required": [
+          "ExploreOurExclusiveOffers",
+          "TheArtOfGifting"
+        ],
         "properties": {
           "ExploreOurExclusiveOffers": {
             "type": "string",
@@ -638,6 +647,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -736,6 +746,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"
@@ -834,6 +845,7 @@
             "required": [
               "id",
               "Title",
+              "Image",
               "Description",
               "DiscoverCTA",
               "DiscoverURL"

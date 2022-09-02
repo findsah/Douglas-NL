@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "StartButtonText": {
       "type": "string",
@@ -30,7 +31,9 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true,
+      "default": "START"
     },
     "questions": {
       "collection": "question"
@@ -42,7 +45,8 @@
         }
       },
       "type": "string",
-      "default": "YOUR PERFECT GIFT AWAITS:"
+      "default": "YOUR PERFECT GIFT AWAITS:",
+      "required": true
     },
     "YourConstellationIs": {
       "pluginOptions": {
@@ -51,7 +55,8 @@
         }
       },
       "type": "string",
-      "default": "YOUR CONSTELLATION IS"
+      "default": "YOUR CONSTELLATION IS",
+      "required": true
     }
   }
 }
