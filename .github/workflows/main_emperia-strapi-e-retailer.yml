@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://emperiadev.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_aba368aad62643619f591c98be15ffec }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_71dc054ebeec47f499e70e04162b5613 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_84f1165f27714180b05c4511ee371f3a }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_c5645a651cc84a82a7223a374c484890 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: emperiadev.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_aba368aad62643619f591c98be15ffec }}/strapi-e-retailer:${{ github.sha }}
+        tags: emperiadev.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_84f1165f27714180b05c4511ee371f3a }}/emperiadev/strapi-e-retailer:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'emperia-strapi-e-retailer'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6f8477c51c5b4c6cba32773b5d1d79f1 }}
-        images: 'emperiadev.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_aba368aad62643619f591c98be15ffec }}/strapi-e-retailer:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_df0879706d164190a68dbcb6682084f8 }}
+        images: 'emperiadev.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_84f1165f27714180b05c4511ee371f3a }}/emperiadev/strapi-e-retailer:${{ github.sha }}'
