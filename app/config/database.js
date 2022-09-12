@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'mysql',
-        host: env('DATABASE_HOST', 'emperia-strapi-e-retailers-db.mysql.database.azure.com'),
+        host: env('DATABASE_HOST', 'tfs-uk.mysql.database.azure.com'),
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'strapidb'),
         username: env('DATABASE_USERNAME', 'cmsadmin'),
