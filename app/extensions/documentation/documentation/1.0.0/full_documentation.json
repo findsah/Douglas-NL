@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2022 12:34:34 PM"
+    "x-generation-date": "09/13/2022 3:20:34 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6620,14 +6620,7 @@
       },
       "Dining": {
         "required": [
-          "id",
-          "JadoreCTA",
-          "MissDiorCTA",
-          "SauvageCTA",
-          "MakeupCTA",
-          "SkincareCTA",
-          "EntranceHallCTA",
-          "VideoURL"
+          "id"
         ],
         "properties": {
           "id": {
@@ -6663,12 +6656,7 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -6814,12 +6802,7 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -6965,12 +6948,7 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7116,12 +7094,7 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7267,12 +7240,7 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7422,15 +7390,6 @@
         }
       },
       "NewDining": {
-        "required": [
-          "JadoreCTA",
-          "MissDiorCTA",
-          "SauvageCTA",
-          "MakeupCTA",
-          "SkincareCTA",
-          "EntranceHallCTA",
-          "VideoURL"
-        ],
         "properties": {
           "JadoreCTA": {
             "type": "string",
@@ -7462,12 +7421,7 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7613,12 +7567,7 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7764,12 +7713,7 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7915,12 +7859,7 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -8066,12 +8005,7 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {

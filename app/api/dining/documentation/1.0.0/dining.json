@@ -312,14 +312,7 @@
     "schemas": {
       "Dining": {
         "required": [
-          "id",
-          "JadoreCTA",
-          "MissDiorCTA",
-          "SauvageCTA",
-          "MakeupCTA",
-          "SkincareCTA",
-          "EntranceHallCTA",
-          "VideoURL"
+          "id"
         ],
         "properties": {
           "id": {
@@ -355,12 +348,7 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -506,12 +494,7 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -657,12 +640,7 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -808,12 +786,7 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -959,12 +932,7 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -1114,15 +1082,6 @@
         }
       },
       "NewDining": {
-        "required": [
-          "JadoreCTA",
-          "MissDiorCTA",
-          "SauvageCTA",
-          "MakeupCTA",
-          "SkincareCTA",
-          "EntranceHallCTA",
-          "VideoURL"
-        ],
         "properties": {
           "JadoreCTA": {
             "type": "string",
@@ -1154,12 +1113,7 @@
           "Jadore": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -1305,12 +1259,7 @@
           "MissDior": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -1456,12 +1405,7 @@
           "Sauvage": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -1607,12 +1551,7 @@
           "MakeUp": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {
@@ -1758,12 +1697,7 @@
           "Skincare": {
             "type": "object",
             "required": [
-              "id",
-              "Title",
-              "Description",
-              "Image",
-              "DiscoverCTA",
-              "DiscoverURL"
+              "id"
             ],
             "properties": {
               "id": {

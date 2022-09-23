@@ -15,36 +15,36 @@
     "JadoreCTA": {
       "type": "string",
       "default": "J'ADORE",
-      "required": true
+      "required": false
     },
     "MissDiorCTA": {
       "type": "string",
       "default": "MISS DIOR",
-      "required": true
+      "required": false
     },
     "SauvageCTA": {
       "type": "string",
       "default": "SAUVAGE",
-      "required": true
+      "required": false
     },
     "MakeupCTA": {
       "type": "string",
       "default": "MAKE UP",
-      "required": true
+      "required": false
     },
     "SkincareCTA": {
       "type": "string",
       "default": "SKINCARE",
-      "required": true
+      "required": false
     },
     "EntranceHallCTA": {
       "type": "string",
       "default": "ENTRANCE HALL",
-      "required": true
+      "required": false
     },
     "VideoURL": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Jadore": {
       "type": "component",

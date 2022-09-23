@@ -9,11 +9,11 @@
   "attributes": {
     "Title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Description": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "Image": {
       "model": "file",
@@ -24,7 +24,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "Products": {
@@ -33,11 +33,11 @@
     "DiscoverCTA": {
       "type": "string",
       "default": "DISCOVER",
-      "required": true
+      "required": false
     },
     "DiscoverURL": {
       "type": "string",
-      "required": true
+      "required": false
     }
   }
 }
